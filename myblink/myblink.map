@@ -378,17 +378,17 @@ LOAD linker stubs
  .debug_line    0x000000000000068f      0x2a4 /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
  .debug_line    0x0000000000000933      0x305 /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
 
-.debug_str      0x0000000000000000     0xd0b7
+.debug_str      0x0000000000000000     0xd0c1
  .debug_str     0x0000000000000000      0x3bb myblink.o
                                         0x444 (size before relaxing)
- .debug_str     0x00000000000003bb     0x8038 /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
-                                       0x81b7 (size before relaxing)
- .debug_str     0x00000000000083f3       0x6c /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
-                                       0x81b5 (size before relaxing)
- .debug_str     0x000000000000845f     0x27cd /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
-                                       0x73d5 (size before relaxing)
- .debug_str     0x000000000000ac2c     0x248b /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
-                                       0x6295 (size before relaxing)
+ .debug_str     0x00000000000003bb     0x8042 /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
+                                       0x81c1 (size before relaxing)
+ .debug_str     0x00000000000083fd       0x6c /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
+                                       0x81bf (size before relaxing)
+ .debug_str     0x0000000000008469     0x27cd /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
+                                       0x73df (size before relaxing)
+ .debug_str     0x000000000000ac36     0x248b /home/vivek/stm32simplified/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
+                                       0x629f (size before relaxing)
 
 .comment        0x0000000000000000       0x59
  .comment       0x0000000000000000       0x59 myblink.o
