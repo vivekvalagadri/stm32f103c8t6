@@ -28,6 +28,14 @@ task1(void *args __attribute((unused))) {
 		vTaskDelay(pdMS_TO_TICKS(500));
 	}
 }
+static void
+task2(void *args __attribute((unused))) {
+
+	for (;;) {
+		gpio_toggle(GPIOC,GPIO14);
+		vTaskDelay(pdMS_TO_TICKS(50));
+	}
+}
 
 int
 main(void) {
@@ -40,8 +48,14 @@ main(void) {
 		GPIO_MODE_OUTPUT_2_MHZ,
 		GPIO_CNF_OUTPUT_PUSHPULL,
 		GPIO13);
+	gpio_set_mode(
+		GPIOC,
+		GPIO_MODE_OUTPUT_2_MHZ,
+		GPIO_CNF_OUTPUT_PUSHPULL,
+		GPIO14);
 
-	xTaskCreate(task1,"LED",100,NULL,configMAX_PRIORITIES-1,NULL);
+	xTaskCreate(task1,"LED",100,NULL,100,NULL);
+	xTaskCreate(task2,"Led",100,NULL,1,NULL);
 	vTaskStartScheduler();
 
 	for (;;);
